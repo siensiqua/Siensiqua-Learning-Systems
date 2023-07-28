@@ -5,7 +5,7 @@ from util import NoneValueError as NVE
 from os import path
 
 # unique corpora id : {corpora_info>> item:entry}
-corp_dirlib = defaultdict(lambda:f'no corpora assigned to {str(key)}}')
+crpra_dirlib = defaultdict(lambda:f'no corpora assigned to {str(key)}}')
 corpora_info = dict()
 
 
