@@ -74,4 +74,22 @@ class CorpusLoader:
     
     
 
-  def preprocess_(self,text):
+  def processing(self,text):
+    # guten_pulls
+      # items in config
+      if item=='rmn_num':
+        #slices at text_num
+        slice_two = text[text_num:]
+        text = re.sub('\\r','',slice_two)
+        lines = text.split('\n')
+        #finds toc
+        toc = {}
+        chp_info_patt = r'\n([xvi]+)[\b\s]([\w\s\d]+)'
+        for line in lines{52::-1}:
+          chp = re.search(line,patt)
+          if chp.groups()>1:
+            chp_num = chp.group(0)
+            chp_name = chp.group(1)
+            
+            
+        chp_nums = re.findall(patt,slice_two[:1200])
