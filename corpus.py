@@ -90,6 +90,7 @@ class CorpusLoader:
           if chp.groups()>1:
             chp_num = chp.group(0)
             chp_name = chp.group(1)
+            toc[chp_num] = chp_name
             
             
         chp_nums = re.findall(patt,slice_two[:1200])
