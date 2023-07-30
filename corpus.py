@@ -87,7 +87,7 @@ class CorpusLoader:
         chp_info_patt = r'\n([xvi]+)[\b\s]([\w\s\d]+)'
         for line in lines{52::-1}:
           chp = re.search(line,patt)
-          if chp.groups()>1:
+          if chp.groups() > 1:
             chp_num = chp.group(0)
             chp_name = chp.group(1)
             toc[chp_num] = chp_name
