@@ -84,13 +84,18 @@ class CorpusLoader:
         lines = text.split('\n')
         #finds toc
         toc = {}
+        idx_last_chp = 0
         chp_info_patt = r'\n([xvi]+)[\b\s]([\w\s\d]+)'
-        for line in lines{52::-1}:
-          chp = re.search(line,patt)
+        for l in range(len(lines[52::-1])):
+          chp = re.search(lines[l],patt)
           if chp.groups() > 1:
+            if idx_last_chp = 0:
+              idx_last_chp = 52-l
             chp_num = chp.group(0)
             chp_name = chp.group(1)
             toc[chp_num] = chp_name
+            if chp_num = 'i':
+              break
             
             
         chp_nums = re.findall(patt,slice_two[:1200])
